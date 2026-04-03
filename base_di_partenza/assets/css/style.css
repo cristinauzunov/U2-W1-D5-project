@@ -1,7 +1,6 @@
 .m-animation{
 animation: fadeWave 2.5s infinite ease-in-out
 }
-
 @keyframes fadeWave {
     0%   { opacity: 0.2; }
     50%  { opacity: 1; }
@@ -232,8 +231,9 @@ header p{
 .info h4{
     font-family: "Roboto", sans-serif;
     font-size: 18px;
-    font-weight: 300px;
+    font-weight: 200px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .info{
@@ -253,6 +253,7 @@ header p{
     color: #555;
     font-family: "Roboto", sans-serif;
     margin-top: 10px;
+    font-weight:bold;
 }
 
 .author img{
