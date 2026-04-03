@@ -1,0 +1,362 @@
+body{
+    width: 90%;
+    margin:0 auto;
+    padding:0;
+}
+/*NAVBAR*/
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color:#ffc017;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    height: 60px;
+    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid black;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+.nav-btn{
+    background-color:#191919;
+    color:white;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 12px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* NAVBAR QUANDO SCROLLI */
+.navbar.scrolled{
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* BOTTONE QUANDO SCROLLI */
+.navbar.scrolled .nav-btn{
+    background-color: #1a8917;
+}
+
+img{
+   width:10rem;
+   height:auto;
+   padding-left: 50px;
+   margin-right: auto;
+   
+   
+   }
+nav a{
+    font-size:15px;
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+   
+}
+
+
+
+
+
+/*HEADER*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:100px;
+    background-color: #ffc017;
+    padding:50px 0;
+    
+    padding-left:100px;
+    position: relative;
+     border-bottom: 1px solid black;
+
+}
+.header-left{
+    max-width: 50%;
+}
+
+.header-right{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.header-right svg{
+    width:480px;   
+    height:auto;
+    display: block;
+
+}
+
+ header h1{
+    font-family:"spectral", serif;
+    font-size:80px;
+    font-weight: 500;
+    line-height:1;
+}
+header p{
+    font-family:"Roboto", sans-serif;
+    font-size:25px ;
+    margin-top: 30px;
+    line-height: 1.3;
+}
+
+.start-button{
+     background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    display: inline-flex;         
+    align-items: center;           
+    gap: 10px;                   
+    margin-top: 30px;
+   
+}
+
+/*TRANDING GRID*/
+.trending{
+    max-width: 1200px;
+    margin:60px auto;
+    padding: 0 20px;
+}
+
+.trending h3{
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.trending img{
+    width:30px;
+    align-items: center;
+}
+
+.trending-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.trend-item{
+    display: flex;
+    gap:15px;
+}
+
+.trend-item .number{
+    font-size: 35px;
+    font-weight: 800;
+    color:  #e6e6e6;
+    font-family: "roboto", sans-serif;
+}
+
+.trend-item h4{
+    font-family: "roboto",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.trend-item .author{
+    font-size: 14px;
+    color:#555;
+    margin-bottom: 3px;
+}
+
+
+
+
+.meta{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:10px;
+    font-size: 12px;
+    color: #757575;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.read-time{
+    display: inline-flex;
+    align-items: center;
+    gap:0; 
+    font-size: 14px;
+    color: #757575;
+}
+
+.read-time img{
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    opacity: 0.8;
+    margin-right: 100px;
+}
+/*articoli*/
+
+.articles{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    max-width: 800px;
+    margin: 100px 10 200px 100px;
+    padding: 0 10px;
+    
+}
+.article-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.picture{
+    width:180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.info h4{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300px;
+    margin-bottom: 5px;
+}
+
+.info{
+    flex: 1;
+}
+.info .author{
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    gap:4px;                 
+    font-size: 14px;
+    color: #555;
+    font-family: "Roboto", sans-serif;
+    margin-top: 10px;
+}
+
+.author img{
+    width: 25px;              
+    height: 25px;
+    border-radius: 50%;     
+    object-fit: cover;
+    margin-right:0.5px;
+    padding-left: 0px;
+}
+
+.category{
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+.meta{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #757575;
+}
+.category-tag{
+    padding: 2px 8px;
+    border: 1px solid #b5b5b5;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #757575;
+    display: inline-flex;
+    align-items: center;
+}
+
+.category-tag img{
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+    opacity: 0.8;
+}
+/*discover more*/
+.layout{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 60px;             
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Colonna articoli */
+.articles{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Colonna discover */
+.discover{
+    flex: 1;
+    margin-top: 0;          
+    position: sticky;
+    top: 20px;    
+    border-bottom: 1px solid #757575;  
+    padding-bottom: 10px;        
+}
+.discover h3{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.discover-tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.discover-tags a{
+    padding: 8px 14px;
+    background-color:white;
+    border:1px solid #757575;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.discover-tags a:hover{
+    background-color:#1a8917;
+}
+/*FOOTER*/
+.footer-links{
+    margin-top:30px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+}
+
+.footer-links a {
+    font-size:13px;
+    color:#757575;
+    text-decoration: none;
+
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
